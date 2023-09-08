@@ -5,6 +5,6 @@
  */
 int main(void)
 {
-printf("\"This is a piece of art");
+printf("\"This is a piece of art,");
 return (0);
 }
