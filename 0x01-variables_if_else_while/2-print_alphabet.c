@@ -14,6 +14,5 @@ int main()
         putchar(n);
 	n++;
     }
-    putchar('\n');
     return 0;
 }
