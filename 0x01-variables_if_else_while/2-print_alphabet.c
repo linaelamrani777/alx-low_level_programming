@@ -1,10 +1,18 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main() 
 {
-    for (char c = 'a'; c <= 'z'; ++c) 
+    int n = 97;
+
+    while (n <= 172)
     {
-        putchar(c);
+        putchar(n);
+	n++;
     }
     putchar('\n');
     return 0;
