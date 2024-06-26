@@ -70,22 +70,3 @@ int exponential_search(int *array, size_t size, int value)
     printf("Value found between indexes [%ld] and [%ld]\n", i / 2, (i < size ? i : size) - 1);
     return _binary_search(array, i / 2, (i < size ? i : size) - 1, value);
 }
-
-/**
- * main - Entry point
- *
- * Return: Always EXIT_SUCCESS
- */
-int main(void)
-{
-    int array[] = {
-        0, 1, 2, 3, 4, 7, 12, 15, 18, 19, 23, 54, 61, 62, 76, 99
-    };
-    size_t size = sizeof(array) / sizeof(array[0]);
-
-    printf("Found %d at index: %d\n\n", 62, exponential_search(array, size, 62));
-    printf("Found %d at index: %d\n\n", 3, exponential_search(array, size, 3));
-    printf("Found %d at index: %d\n", 999, exponential_search(array, size, 999));
-
-    return 0;
-}
